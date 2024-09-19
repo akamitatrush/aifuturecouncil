@@ -29,36 +29,42 @@ O projeto é um site estático desenvolvido com **HTML**, **CSS**, e **JavaScrip
 Para rodar o site localmente:
 
 1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/aifuturecouncil.git
+   
+      ```bash   
+      git clone https://github.com/seu-usuario/aifuturecouncil.git
+      ```
 
-2 .Navegue até a pasta do projeto:
+2. Navegue até a pasta do projeto:
+     ```bash  
+     cd aifuturecouncil
+      ```
 
-  cd aifuturecouncil
-
-3 Abra o arquivo home.html no navegador:
+3. Abra o arquivo home.html no navegador:
 
    Para visualizar o site, abra o arquivo home.html em qualquer navegador da sua escolha.
 
-  Você pode simplesmente clicar duas vezes no arquivo ou, se estiver usando o terminal, digitar o seguinte comando:
+   Você pode simplesmente clicar duas vezes no arquivo ou, se estiver usando o terminal, digitar o seguinte comando:
 
+    ```bash
     xdg-open html/home.html  # Para sistemas Linux
     start html\home.html     # Para Windows
-    open html/home.html      # Para macOS
+    open html/home.html      # Para macOS 
+    ```
 
-Contribuições
+
+*Contribuições*
 
 Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
-Licença
+*Licença*
 
 Este projeto está licenciado sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
 
-Contato
+*Contato*
 
-Se você tiver perguntas ou sugestões, entre em contato pelo email: sérgiohasher@aifuturecouncil.org
+Se você tiver perguntas ou sugestões, entre em contato pelo email: sergiohasher@aifuturecouncil.org
 
-Visite o site:
+*Visite o site:*
 
 AI Future Council
 
