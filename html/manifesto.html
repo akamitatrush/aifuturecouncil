@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manifesto do Conselho Global de IA</title>
+    <link rel="stylesheet" href="../css/manifesto.css">
+</head>
+
+<body>
+    <!-- Barra de Progresso -->
+    <div id="progress-bar"></div>
+
+    <header>
+        <div class="logo">Global AI Council</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="manifesto.html">Manifesto</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="manifesto-download.pdf" class="download-button">Baixar PDF</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Navegação Superior com Links de Âncoras -->
+    <nav id="manifesto-nav">
+        <ul>
+            <li><a href="#introducao">Introdução</a></li>
+            <li><a href="#etica">O Papel da Ética na IA</a></li>
+            <li><a href="#responsabilidade">Responsabilidade Global</a></li>
+            <li><a href="#direitos-humanos">Proteção dos Direitos Humanos</a></li>
+            <li><a href="#conclusao">Conclusão</a></li>
+        </ul>
+    </nav>
+
+    <!-- Configurações de Leitura -->
+    <div class="settings">
+        <label for="contrast">Contraste</label>
+        <input type="range" id="contrast" min="0.5" max="2" step="0.1" value="1" onchange="adjustContrast(this.value)">
+        <label for="spacing">Espaçamento</label>
+        <input type="range" id="spacing" min="1" max="2" step="0.1" value="1.5"
+            onchange="adjustLineSpacing(this.value)">
+    </div>
+
+    <!-- Conteúdo Centralizado do Manifesto -->
+    <main id="manifesto-content">
+        <section id="introducao" class="fade-in section">
+            <h1>Manifesto do Conselho Global de Identidade Artificial</h1>
+            <p>
+                Em um mundo cada vez mais dominado pela inteligência artificial, torna-se essencial garantir que o
+                progresso tecnológico seja orientado por princípios éticos sólidos. Este manifesto estabelece uma série
+                de diretrizes que visam proteger a dignidade humana e promover o uso responsável da IA.
+            </p>
+        </section>
+
+        <section id="etica" class="fade-in section">
+            <h2>Seção 1: O Papel da Ética na IA</h2>
+            <p>
+                O Conselho Global de Identidade Artificial acredita que a ética deve ser o princípio norteador em
+                qualquer desenvolvimento de IA. Sem uma base ética forte, o risco de impactos negativos aumenta
+                significativamente.
+            </p>
+        </section>
+
+        <section id="responsabilidade" class="fade-in section">
+            <h2>Seção 2: Responsabilidade Global</h2>
+            <p>
+                Todos os países têm a responsabilidade de garantir que a IA seja utilizada para o bem-estar da
+                humanidade. O Conselho promove uma abordagem global, colaborativa e transparente para o desenvolvimento
+                da IA.
+            </p>
+        </section>
+
+        <section id="direitos-humanos" class="fade-in section">
+            <h2>Seção 3: Proteção dos Direitos Humanos</h2>
+            <p>
+                A IA deve ser utilizada para ampliar, e não restringir, os direitos humanos. Isso inclui garantir a
+                privacidade, a igualdade de oportunidades e a não discriminação.
+            </p>
+        </section>
+
+        <section id="conclusao" class="fade-in section">
+            <h2>Conclusão</h2>
+            <p>
+                O Conselho Global de IA propõe um futuro onde a tecnologia seja uma força do bem. Ao seguir as
+                diretrizes éticas estabelecidas neste manifesto, podemos garantir um futuro mais seguro e sustentável
+                para todos.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Todos os direitos reservados © 2024 Conselho Global de Identidade Artificial</p>
+    </footer>
+
+    <script>
+        // Animação de fade-in ao rolar a página
+        window.addEventListener('scroll', function () {
+            let elements = document.querySelectorAll('.fade-in');
+            elements.forEach(function (element) {
+                let position = element.getBoundingClientRect().top;
+                let screenPosition = window.innerHeight / 1.2;
+                if (position < screenPosition) {
+                    element.classList.add('show');
+                }
+            });
+        });
+
+        // Barra de progresso
+        window.onscroll = function () {
+            let scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+            let scrollHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrollPercentage = (scrollTop / scrollHeight) * 100;
+            document.getElementById("progress-bar").style.width = scrollPercentage + "%";
+        };
+
+        // Ajustar contraste e espaçamento
+        function adjustContrast(value) {
+            document.body.style.filter = `brightness(${value})`;
+        }
+
+        function adjustLineSpacing(value) {
+            document.body.style.lineHeight = value;
+        }
+
+    </script>
+</body>
+
+</html>

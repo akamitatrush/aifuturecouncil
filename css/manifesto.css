@@ -1,0 +1,153 @@
+/* Estilos Globais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0d0d0d;
+    color: #fff;
+    line-height: 1.8;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+/* Navegação de Âncoras */
+#manifesto-nav {
+    background-color: #1a1a1a;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#manifesto-nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#manifesto-nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+#manifesto-nav ul li a {
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#manifesto-nav ul li a:hover {
+    color: #ffffff;
+}
+
+/* Barra de Progresso */
+#progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 5px;
+    background-color: #ffffff;
+    z-index: 1000;
+}
+
+/* Configurações de Leitura */
+/* Configurações de Leitura (Movido para o canto inferior esquerdo) */
+.settings {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Posicionado no canto inferior esquerdo */
+    background-color: #333;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.settings label {
+    color: #fff;
+    margin-right: 10px;
+}
+
+input[type="range"] {
+    width: 100px;
+}
+
+
+/* Conteúdo Principal */
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Seções com Animação */
+.section {
+    position: relative;
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    transition: box-shadow 0.3s ease;
+}
+
+.section:hover {
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7);
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Botão de Download */
+.download-button {
+    background-color: #ffffff;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+}

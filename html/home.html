@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conselho Global de IA</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">Global AI Council</div>
+        <nav>
+            <ul>
+                <li><button onclick="changeLanguage('pt')">PT</button></li>
+                <li><button onclick="changeLanguage('en')">EN</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 id="title">Bem-vindo ao Conselho Global de Identidade Artificial</h1>
+            <p id="description">Explorando os limites éticos da IA para moldar um futuro responsável.</p>
+        </div>
+
+        <!-- Imagem no Lado Esquerdo (Manifesto como Livro) -->
+        <div class="side-image-left">
+            <img src="../images/futuristic-manifesto-book.png" alt="Futuristic Manifesto Book">
+        </div>
+
+        <!-- Imagem no Centro (Conselho Global) -->
+        <img src="../images/global-council-center.png" alt="Global AI Council" class="hero-image">
+
+        <!-- Imagem no Lado Direito (Robo IA) -->
+        <div class="side-image-right">
+            <img src="../images/futuristic-ai-robot.png" alt="Futuristic AI Robot">
+        </div>
+    </section>
+
+    <section id="manifesto">
+        <h2 id="manifesto-title">Manifesto</h2>
+        <p id="manifesto-text">
+            O Conselho Global de Identidade Artificial está liderando o futuro da inteligência artificial com um
+            compromisso com o avanço ético e a proteção global. Juntos, estamos definindo os padrões para um mundo
+            movido por IA responsável e visionário, garantindo um futuro sustentável e seguro para toda a humanidade.
+        </p>
+        <p id="manifesto-text-en" style="display:none;">
+            The Global AI Identity Council is leading the future of artificial intelligence with a commitment to ethical
+            advancement and global protection. Together, we are setting the standards for a responsible and visionary
+            AI-driven world, ensuring a sustainable and secure future for all humanity.
+        </p>
+         <a href="manifesto.html" id="manifesto-link">Leia o manifesto completo</a>
+
+
+        <!-- Linhas geométricas para a animação -->
+        <div class="lines line1"></div>
+        <div class="lines line2"></div>
+
+    </section>
+
+
+    <footer>
+        <p id="footer-text">Todos os direitos reservados © 2024</p>
+    </footer>
+
+    <script>
+        const translations = {
+            'pt': {
+                'title': 'Bem-vindo ao Conselho Global de Identidade Artificial',
+                'description': 'Explorando os limites éticos da IA para moldar um futuro responsável.',
+                'manifesto-title': 'Manifesto',
+                'manifesto-text': 'O Conselho Global de Identidade Artificial está liderando o futuro da inteligência artificial com um compromisso com o avanço ético e a proteção global. Juntos, estamos definindo os padrões para um mundo movido por IA responsável e visionário, garantindo um futuro sustentável e seguro para toda a humanidade.',
+                'manifesto-link': 'Leia o manifesto completo',
+                'footer-text': 'Todos os direitos reservados © 2024'
+            },
+            'en': {
+                'title': 'Welcome to the Global AI Identity Council',
+                'description': 'Exploring the ethical limits of AI to shape a responsible future.',
+                'manifesto-title': 'Manifest',
+                'manifesto-text': 'The Global AI Identity Council is leading the future of artificial intelligence with a commitment to ethical advancement and global protection. Together, we are setting the standards for a responsible and visionary AI-driven world, ensuring a sustainable and secure future for all humanity.',
+                'manifesto-link': 'Read the full manifest',
+                'footer-text': 'All rights reserved © 2024'
+            }
+        };
+
+
+        function changeLanguage(lang) {
+            document.getElementById('title').innerText = translations[lang].title;
+            document.getElementById('description').innerText = translations[lang].description;
+            document.getElementById('manifesto-title').innerText = translations[lang]['manifesto-title'];
+            document.getElementById('manifesto-link').innerText = translations[lang]['manifesto-link'];
+
+            // Mostrar o texto correto de acordo com o idioma
+            if (lang === 'pt') {
+                document.getElementById('manifesto-text').style.display = 'block';
+                document.getElementById('manifesto-text-en').style.display = 'none';
+            } else {
+                document.getElementById('manifesto-text').style.display = 'none';
+                document.getElementById('manifesto-text-en').style.display = 'block';
+            }
+
+            // Atualizar o rodapé
+            document.getElementById('footer-text').innerText = translations[lang]['footer-text'];
+        }
+
+
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('light-mode');
+        });
+
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
