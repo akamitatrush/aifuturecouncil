@@ -14,10 +14,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 2px solid #00ffff;
-    /* Linha Neon */
+    border-bottom: 2px solid #ffffff; /* Neon branco */
     position: relative;
-    box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2); /* Brilho branco */
 }
 
 /* Estilo do Logo */
@@ -53,8 +52,8 @@ nav ul li a {
 
 /* Hover nos links de navegação */
 nav ul li a:hover {
-    background-color: #00ffff;
-    color: #000000;
+    background-color: #ffffff; /* Fundo branco no hover */
+    color: #000000; /* Texto preto no hover */
     border-radius: 5px;
 }
 
@@ -66,7 +65,7 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    border: 1px solid rgba(0, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Brilho branco */
     pointer-events: none;
     animation: border-glow 5s infinite alternate;
 }
@@ -74,48 +73,27 @@ header::before {
 /* Animação do brilho */
 @keyframes border-glow {
     0% {
-        box-shadow: 0 0 5px rgba(0, 255, 255, 0.3);
+        box-shadow: 0 0 5px rgba(255, 255, 255, 0.3); /* Brilho branco */
     }
 
     100% {
-        box-shadow: 0 0 15px rgba(0, 255, 255, 0.8);
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.8); /* Brilho branco */
     }
-}
-
-
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-}
-
-nav a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s ease;
-}
-
-nav a:hover {
-    color: #FFFFFF;
-    /* Neon Branco */
 }
 
 /* Ajuste do Título e Espaçamento */
 main {
     max-width: 1200px;
     margin: 30px auto;
-    /* Margem reduzida para diminuir espaços verticais */
     padding: 20px;
     text-align: center;
 }
 
 #downloads h1 {
     font-size: 32px;
-    /* Tamanho levemente menor para ajuste */
     margin-bottom: 15px;
-    color: #FFFFFF;
-    /* Neon Branco */
-    text-shadow: 0 0 10px #FFFFFF, 0 0 20px #FFFFFF;
+    color: #ffffff; /* Neon branco */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
 }
 
 #downloads p {
@@ -135,20 +113,16 @@ main {
 .download-card {
     background-color: #111;
     border-radius: 8px;
-    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.3);
-    /* Neon Branco */
+    box-shadow: 0 2px 20px rgba(255, 255, 255, 0.3); /* Neon branco */
     padding: 15px;
     width: 280px;
-    /* Tamanho levemente menor */
     transition: box-shadow 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    /* Neon Branco */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Neon branco */
 }
 
 .download-card h2 {
     font-size: 22px;
-    color: #FFFFFF;
-    /* Neon Branco */
+    color: #ffffff; /* Neon branco */
 }
 
 .download-card p {
@@ -159,38 +133,35 @@ main {
 .download-button {
     display: inline-block;
     padding: 8px 18px;
-    background-color: #007F7F;
-    color: #fff;
+    background-color: #ffffff; /* Botão branco */
+    color: #000;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    /* Neon Branco */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Neon branco */
 }
 
 .download-button:hover {
-    background-color: #FFFFFF;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 1);
-    /* Neon Branco */
+    background-color: #000000; /* Fundo preto no hover */
+    color: #ffffff; /* Texto branco no hover */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 1); /* Neon branco no hover */
 }
 
 /* Estilo para as Imagens Futuristas */
 .image-center {
     margin: 20px 0;
-    /* Margem ajustada */
 }
 
 .image-center img {
     max-width: 90%;
     height: auto;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
-    /* Brilho nas bordas da imagem */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.4); /* Brilho nas bordas da imagem */
     border-radius: 10px;
 }
 
 /* Estilo do botão "Voltar ao Início" */
 .back-home-btn {
-    background-color: #ffffff; /* Cor branca no lugar do azul */
+    background-color: #ffffff; /* Cor branca */
     color: #000;
     font-size: 18px;
     padding: 12px 24px;
@@ -199,7 +170,7 @@ main {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-weight: bold;
-    position: fixed; /* Botão flutuante */
+    position: fixed;
     top: 20px;
     right: 20px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Brilho branco */
@@ -256,7 +227,7 @@ main {
 
 /* Estilo dos botões de download */
 .download-button {
-    background-color: #ffffff; /* Cor branca no lugar do azul */
+    background-color: #ffffff; /* Cor branca */
     color: #000;
     padding: 10px 20px;
     border: none;
@@ -279,7 +250,7 @@ footer {
     padding: 20px;
     background-color: #1a1a1a;
     color: #ffffff;
-    border-top: 2px solid #ffffff; /* Linha branca no lugar do azul */
+    border-top: 2px solid #ffffff; /* Linha branca */
     position: relative;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5); /* Brilho branco */
 }
