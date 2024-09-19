@@ -248,5 +248,31 @@ footer {
         /* Ícone aumenta ligeiramente ao passar o mouse */
     }
 
+    /* Container do Logo */
+    .logo-container {
+        text-align: center;
+        padding: 20px;
+        background-color: #000;
+        /* Certifique-se de ajustar a cor de fundo para contraste */
+    }
+
+    /* Estilo do Logo */
+    .logo-container img {
+        max-width: 300px;
+        /* Ajuste o tamanho conforme necessário */
+        width: 100%;
+        filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8));
+        /* Adiciona uma sombra clara ao redor do logo */
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    /* Efeito ao passar o mouse */
+    .logo-container img:hover {
+        transform: scale(1.05);
+        /* Pequeno aumento no tamanho ao passar o mouse */
+        opacity: 0.9;
+    }
+
+
 
 }
